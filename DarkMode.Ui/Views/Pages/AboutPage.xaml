@@ -12,7 +12,7 @@
       ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
       Foreground="{DynamicResource TextFillColorPrimaryBrush}"
       Title="AboutPage">
-    <StackPanel x:Name="RootPanel">
+    <StackPanel x:Name="RootPanel" Margin="0,0,0,10">
         <ui:CardExpander
             Margin="0,8,0,0"
             HorizontalContentAlignment="Stretch"
@@ -29,11 +29,11 @@
                         <TextBlock
                             FontSize="13"
                             FontWeight="Medium"
-                            Text="DarkMode 信息" />
+                            Text="{i18N:StringLocalizer 'AboutPage.Card1.Title'}" />
                         <TextBlock
                             FontSize="12"
                             Foreground="{DynamicResource TextFillColorSecondaryBrush}"
-                            Text="包含版本信息等内容" />
+                            Text="{i18N:StringLocalizer 'AboutPage.Card1.SubTitle'}" />
                     </StackPanel>
                     <ui:ProgressRing 
                         x:Name="ProgressRing"
@@ -53,7 +53,7 @@
                         Padding="30,6"
                         VerticalAlignment="Center"
                         Appearance="Secondary"
-                        Content="检查更新" />
+                        Content="{i18N:StringLocalizer 'AboutPage.Card1.Button'}" />
                 </Grid>
             </ui:CardExpander.Header>
             <Grid Width="Auto" HorizontalAlignment="Stretch">
@@ -72,28 +72,28 @@
                 <TextBlock
                     Grid.Column="0"
                     Grid.Row="0"
-                    Text="渠道"
+                    Text="{i18N:StringLocalizer 'AboutPage.Card1.Content1'}"
                     FontSize="13"
                     Margin="0,0,0,10"
                     />
                 <TextBlock
                     Grid.Column="0"
                     Grid.Row="1"
-                    Text="版本"
+                    Text="{i18N:StringLocalizer 'AboutPage.Card1.Content2'}"
                     FontSize="13"
                     Margin="0,0,0,10"
                     />
                 <TextBlock
                     Grid.Column="0"
                     Grid.Row="2"
-                    Text="开发者"
+                    Text="{i18N:StringLocalizer 'AboutPage.Card1.Content3'}"
                     FontSize="13"
                     Margin="0,0,0,10"
                     />
                 <TextBlock
                     Grid.Column="0"
                     Grid.Row="3"
-                    Text="版权"
+                    Text="{i18N:StringLocalizer 'AboutPage.Card1.Content4'}"
                     FontSize="13"
                     Margin="0,0,0,10"
                     />
@@ -124,7 +124,7 @@
             </Grid>
         </ui:CardExpander>
         
-        <ui:HyperlinkButton Margin="0,10,0,0" NavigateUri="https://github.com/Melon-Studio/DarkMode2" Icon="Link48" Content="DarkMode 的 Github 主页"/>
+        <ui:HyperlinkButton Margin="0,10,0,0" NavigateUri="https://github.com/Melon-Studio/DarkMode2" Icon="Link48" Content="{i18N:StringLocalizer 'AboutPage.Link.Github'}"/>
 
         <ui:CardExpander ContentPadding="0" Icon="{ui:SymbolIcon GiftCardMoney24}">
             <ui:CardExpander.Header>
@@ -141,12 +141,12 @@
                         Grid.Row="0"
                         Grid.Column="0"
                         FontTypography="Body"
-                        Text="捐助" />
+                        Text="{i18N:StringLocalizer 'AboutPage.Card8.Title'}" />
                     <ui:TextBlock
                         Grid.Row="1"
                         Grid.Column="0"
                         Foreground="{ui:ThemeResource TextFillColorSecondaryBrush}"
-                        Text="支持开源项目持续开发，你的每一份心意都将助力功能迭代与维护" />
+                        Text="{i18N:StringLocalizer 'AboutPage.Card8.SubTitle'}" />
                 </Grid>
             </ui:CardExpander.Header>
             <StackPanel>
@@ -164,8 +164,8 @@
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
                         <StackPanel Orientation="Horizontal" Grid.Column="0">
-                            <ui:FontIcon FontFamily="{StaticResource IconFont}" Glyph="&#xe6f4;" FontSize="20" />
-                            <TextBlock Text="通过微信捐助" />
+                            <ui:FontIcon FontFamily="{StaticResource IconFont}" Glyph="&#xe6f4;" FontSize="20" Margin="0,0,10,0"/>
+                            <TextBlock Text="{i18N:StringLocalizer 'AboutPage.Card8.Content1'}" />
                         </StackPanel>
                         <ui:SymbolIcon Grid.Column="1" Symbol="Link24" />
                     </Grid>
@@ -185,29 +185,8 @@
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
                         <StackPanel Orientation="Horizontal" Grid.Column="0">
-                            <ui:FontIcon FontFamily="{StaticResource IconFont}" Glyph="&#xe666;" FontSize="20" />
-                            
-                            <TextBlock Text="通过支付宝捐助" />
-                        </StackPanel>
-                        <ui:SymbolIcon Grid.Column="1" Symbol="Link24" />
-                    </Grid>
-                </ui:Anchor>
-                <ui:Anchor
-                    Margin="0"
-                    Padding="16"
-                    HorizontalAlignment="Stretch"
-                    HorizontalContentAlignment="Stretch"
-                    Background="Transparent"
-                    BorderThickness="0,1,0,1"
-                    CornerRadius="0">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
-                        <StackPanel Orientation="Horizontal" Grid.Column="0">
-                            <ui:FontIcon FontFamily="{StaticResource IconFont}" Glyph="&#xe635;" FontSize="20" />
-                            <TextBlock Text="通过爱发电捐助" />
+                            <ui:FontIcon FontFamily="{StaticResource IconFont}" Glyph="&#xe666;" FontSize="20" Margin="0,0,10,0" />
+                            <TextBlock Text="{i18N:StringLocalizer 'AboutPage.Card8.Content2'}" />
                         </StackPanel>
                         <ui:SymbolIcon Grid.Column="1" Symbol="Link24" />
                     </Grid>
@@ -223,11 +202,11 @@
                 <TextBlock
                         FontSize="13"
                         FontWeight="Medium"
-                        Text="帮助社区" />
+                        Text="{i18N:StringLocalizer 'AboutPage.Card2.Title'}" />
                 <TextBlock
                         FontSize="12"
                         Foreground="{DynamicResource TextFillColorSecondaryBrush}"
-                        Text="点击进入 DarkMode 社区获取帮助" />
+                        Text="{i18N:StringLocalizer 'AboutPage.Card2.SubTitle'}" />
             </StackPanel>
         </ui:CardAction>
         
@@ -241,11 +220,11 @@
                 <TextBlock
                     FontSize="13"
                     FontWeight="Medium"
-                    Text="用户协议" />
+                    Text="{i18N:StringLocalizer 'AboutPage.Card3.Title'}" />
                 <TextBlock
                     FontSize="12"
                     Foreground="{DynamicResource TextFillColorSecondaryBrush}"
-                    Text="DarkMode 对于用户使用服务的行为规范与权益约定" />
+                    Text="{i18N:StringLocalizer 'AboutPage.Card3.SubTitle'}" />
             </StackPanel>
         </ui:CardAction>
 
@@ -259,11 +238,11 @@
                 <TextBlock
                     FontSize="13"
                     FontWeight="Medium"
-                    Text="隐私政策" />
+                    Text="{i18N:StringLocalizer 'AboutPage.Card4.Title'}" />
                 <TextBlock
                     FontSize="12"
                     Foreground="{DynamicResource TextFillColorSecondaryBrush}"
-                    Text="DarkMode 关于如何保护用户使用应用时，涉及的个人信息与数据安全" />
+                    Text="{i18N:StringLocalizer 'AboutPage.Card4.SubTitle'}" />
             </StackPanel>
         </ui:CardAction>
 
@@ -283,11 +262,11 @@
                         <TextBlock
                             FontSize="13"
                             FontWeight="Medium"
-                            Text="贡献者" />
+                            Text="{i18N:StringLocalizer 'AboutPage.Card5.Title'}" />
                         <TextBlock
                             FontSize="12"
                             Foreground="{DynamicResource TextFillColorSecondaryBrush}"
-                            Text="参与了 DarkMode 仓库代码贡献的用户" />
+                            Text="{i18N:StringLocalizer 'AboutPage.Card5.SubTitle'}" />
                     </StackPanel>
 
                 </Grid>
@@ -332,11 +311,11 @@
                         <TextBlock
                             FontSize="13"
                             FontWeight="Medium"
-                            Text="鸣谢" />
+                            Text="{i18N:StringLocalizer 'AboutPage.Card6.Title'}" />
                         <TextBlock
                             FontSize="12"
                             Foreground="{DynamicResource TextFillColorSecondaryBrush}"
-                            Text="为 DarkMode 发展作出贡献，值得展示的用户或团体" />
+                            Text="{i18N:StringLocalizer 'AboutPage.Card6.SubTitle'}" />
                     </StackPanel>
 
                 </Grid>
@@ -381,11 +360,11 @@
                         <TextBlock
                             FontSize="13"
                             FontWeight="Medium"
-                            Text="开放源代码许可" />
+                            Text="{i18N:StringLocalizer 'AboutPage.Card7.Title'}" />
                         <TextBlock
                             FontSize="12"
                             Foreground="{DynamicResource TextFillColorSecondaryBrush}"
-                            Text="DarkMode 使用第三方库的版权与许可声明" />
+                            Text="{i18N:StringLocalizer 'AboutPage.Card7.SubTitle'}" />
                     </StackPanel>
                 </Grid>
             </ui:CardExpander.Header>
@@ -408,28 +387,28 @@
                 <TextBlock
                     Grid.Column="0"
                     Grid.Row="0"
-                    Text="名称"
+                    Text="{i18N:StringLocalizer 'AboutPage.Card7.Content1'}"
                     FontSize="13"
                     Margin="0,0,0,10" FontWeight="Bold" HorizontalAlignment="Center"
                     />
                 <TextBlock
                     Grid.Column="1"
                     Grid.Row="0"
-                    Text="作者"
+                    Text="{i18N:StringLocalizer 'AboutPage.Card7.Content2'}"
                     FontSize="13"
                     Margin="0,0,0,10" FontWeight="Bold" HorizontalAlignment="Center"
                     />
                 <TextBlock
                     Grid.Column="2"
                     Grid.Row="0"
-                    Text="版权"
+                    Text="{i18N:StringLocalizer 'AboutPage.Card7.Content3'}"
                     FontSize="13"
                     Margin="0,0,0,10" FontWeight="Bold" HorizontalAlignment="Center"
                     />
                 <TextBlock
                     Grid.Column="3"
                     Grid.Row="0"
-                    Text="许可"
+                    Text="{i18N:StringLocalizer 'AboutPage.Card7.Content4'}"
                     FontSize="13" FontWeight="Bold" HorizontalAlignment="Center"
                     />
                 <TextBlock

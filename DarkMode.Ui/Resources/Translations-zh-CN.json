@@ -82,64 +82,84 @@
       "value": "帮助社区"
     },
     {
-      "name": "AboutPage.Card1.Button",
+      "name": "AboutPage.Card2.SubTitle",
       "value": "点击进入 DarkMode 社区获取帮助"
     },
     {
-      "name": "AboutPage.Card1.Button",
+      "name": "AboutPage.Card3.Title",
       "value": "用户协议"
     },
     {
-      "name": "AboutPage.Card1.Button",
+      "name": "AboutPage.Card3.SubTitle",
       "value": "DarkMode 对于用户使用服务的行为规范与权益约定"
     },
     {
-      "name": "AboutPage.Card1.Button",
+      "name": "AboutPage.Card4.Title",
       "value": "隐私政策"
     },
     {
-      "name": "AboutPage.Card1.Button",
+      "name": "AboutPage.Card4.SubTitle",
       "value": "DarkMode 关于如何保护用户使用应用时，涉及的个人信息与数据安全"
     },
     {
-      "name": "AboutPage.Card1.Button",
+      "name": "AboutPage.Card5.Title",
       "value": "贡献者"
     },
     {
-      "name": "AboutPage.Card1.Button",
+      "name": "AboutPage.Card5.SubTitle",
       "value": "参与了 DarkMode 仓库代码贡献的用户"
     },
     {
-      "name": "AboutPage.Card1.Button",
+      "name": "AboutPage.Card6.Title",
       "value": "鸣谢"
     },
     {
-      "name": "AboutPage.Card1.Button",
+      "name": "AboutPage.Card6.SubTitle",
       "value": "为 DarkMode 发展作出贡献，值得展示的用户或团体"
     },
     {
-      "name": "AboutPage.Card1.Button",
+      "name": "AboutPage.Card7.Title",
       "value": "开放源代码许可"
     },
     {
-      "name": "AboutPage.Card1.Button",
+      "name": "AboutPage.Card7.SubTitle",
       "value": "DarkMode 使用第三方库的版权与许可声明"
     },
     {
-      "name": "AboutPage.Card1.Button",
+      "name": "AboutPage.Card7.Content1",
       "value": "名称"
     },
     {
-      "name": "AboutPage.Card1.Button",
+      "name": "AboutPage.Card7.Content2",
+      "value": "作者"
+    },
+    {
+      "name": "AboutPage.Card7.Content3",
       "value": "版权"
     },
     {
-      "name": "AboutPage.Card1.Button",
+      "name": "AboutPage.Card7.Content4",
       "value": "许可"
     },
     {
-      "name": "AboutPage.Card1.Button",
-      "value": "检查更新"
+      "name": "AboutPage.Card8.Title",
+      "value": "捐助"
+    },
+    {
+      "name": "AboutPage.Card8.SubTitle",
+      "value": "支持开源项目持续开发，你的每一份心意都将助力功能迭代与维护"
+    },
+    {
+      "name": "AboutPage.Card8.Content1",
+      "value": "通过微信捐助"
+    },
+    {
+      "name": "AboutPage.Card8.Content2",
+      "value": "通过支付宝捐助"
+    },
+    {
+      "name": "AboutPage.Link.Github",
+      "value": "DarkMode 的 Github 主页"
     }
   ]
 }

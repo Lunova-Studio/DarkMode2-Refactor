@@ -14,7 +14,7 @@
       Foreground="{DynamicResource TextFillColorPrimaryBrush}"
       Title="SettingsPage">
     <StackPanel x:Name="RootPanel">
-        <ui:CardControl Margin="0,8,0,0" Icon="{ui:SymbolIcon ArrowCounterclockwise24}">
+        <ui:CardControl Margin="0,8,0,0" Icon="{ui:SymbolIcon FlashAuto24}">
             <ui:CardControl.Header>
                 <StackPanel Grid.Column="0" VerticalAlignment="Center">
                     <TextBlock
@@ -29,6 +29,22 @@
             </ui:CardControl.Header>
             <ui:ToggleSwitch x:Name="Autostart" Focusable ="false"/>
         </ui:CardControl>
+        
+        <ui:CardControl Margin="0,8,0,0" Icon="{ui:SymbolIcon Keyboard24}">
+            <ui:CardControl.Header>
+                <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                    <TextBlock
+                        FontSize="13"
+                        FontWeight="Medium"
+                        Text="快捷键" />
+                    <TextBlock
+                        FontSize="12"
+                        Foreground="{DynamicResource TextFillColorSecondaryBrush}"
+                        Text="通过快捷键控制部分功能" />
+                </StackPanel>
+            </ui:CardControl.Header>
+            <ui:Button Width="40" Icon="{ui:SymbolIcon Settings48}" />
+        </ui:CardControl>
 
         <ui:CardControl Margin="0,8,0,0" Icon="{ui:SymbolIcon CloudArrowUp24}">
             <ui:CardControl.Header>
@@ -40,7 +56,7 @@
                     <TextBlock
                         FontSize="12"
                         Foreground="{DynamicResource TextFillColorSecondaryBrush}"
-                        Text="开启后，DarkMode 会在后台自动检测新版本，如果有则会在下次启动程序前自动更新" />
+                        Text="DarkMode 会在后台自动检测新版本，并在下次启动程序前自动更新" />
                 </StackPanel>
             </ui:CardControl.Header>
             <ui:ToggleSwitch x:Name="AutoUpdate" Focusable ="false"/>
@@ -88,7 +104,7 @@
                     <TextBlock
                         FontSize="12"
                         Foreground="{DynamicResource TextFillColorSecondaryBrush}"
-                        Text="是否隐藏托盘栏图标" />
+                        Text="关闭后，托盘栏图标将不再显示" />
                 </StackPanel>
             </ui:CardControl.Header>
             <ui:ToggleSwitch x:Name="TrayBar" Focusable ="false"/>

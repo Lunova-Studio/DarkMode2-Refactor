@@ -164,81 +164,74 @@
             <Grid 
                 Width="Auto" 
                   HorizontalAlignment="Stretch" RenderTransformOrigin="0.456,0.569">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="100" />
-                    <ColumnDefinition Width="3*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
+                
+                <StackPanel>
+                    <ui:InfoBar IsOpen="True" Title="提示" Message="该模式是通过经纬度计算的理论日出日落时间，暂未考虑海拔和地形因素影响下的实际日出日落时间。"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            FontSize="13"
+                            FontWeight="Medium"
+                            Text="经度" 
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center"
+                            Margin="10"/>
 
-                <TextBlock
-                    Grid.Column="0"
-                    Grid.Row="0"
-                    FontSize="13"
-                    FontWeight="Medium"
-                    Text="经度" 
-                    HorizontalAlignment="Center" 
-                    VerticalAlignment="Center"
-                    Margin="10"/>
+                        <TextBlock
+                            x:Name="lat"
+                            Grid.Column="1"
+                            Grid.Row="0"
+                            FontSize="13"
+                            FontWeight="Medium"
+                            Margin="10" 
+                            HorizontalAlignment="Left" 
+                            VerticalAlignment="Center" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            FontSize="13"
+                            FontWeight="Medium"
+                            Text="纬度" 
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center"
+                            Margin="10"/>
 
-                <TextBlock
-                    x:Name="lat"
-                    Grid.Column="1"
-                    Grid.Row="0"
-                    FontSize="13"
-                    FontWeight="Medium"
-                    Margin="10" 
-                    HorizontalAlignment="Left" 
-                    VerticalAlignment="Center" />
+                        <TextBlock 
+                            x:Name="lng"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            FontSize="13"
+                            FontWeight="Medium"
+                            Margin="10" 
+                            HorizontalAlignment="Left" 
+                            VerticalAlignment="Center"
+                        />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock
+                            Grid.Column="0"
+                            Grid.Row="2"
+                            FontSize="13"
+                            FontWeight="Medium"
+                            Text="位置" 
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center"
+                            Margin="10"/>
 
-                <TextBlock
-                    Grid.Column="0"
-                    Grid.Row="1"
-                    FontSize="13"
-                    FontWeight="Medium"
-                    Text="纬度" 
-                    HorizontalAlignment="Center" 
-                    VerticalAlignment="Center"
-                    Margin="10"/>
-
-                <TextBlock 
-                    x:Name="lng"
-                    Grid.Column="1"
-                    Grid.Row="1"
-                    FontSize="13"
-                    FontWeight="Medium"
-                    Margin="10" 
-                    HorizontalAlignment="Left" 
-                    VerticalAlignment="Center"
-                    />
-
-                <TextBlock
-                    Grid.Column="0"
-                    Grid.Row="2"
-                    FontSize="13"
-                    FontWeight="Medium"
-                    Text="位置" 
-                    HorizontalAlignment="Center" 
-                    VerticalAlignment="Center"
-                    Margin="10"/>
-
-                <TextBlock 
-                    x:Name="location"
-                    Grid.Column="1"
-                    Grid.Row="2"
-                    FontSize="13"
-                    FontWeight="Medium"
-                    Margin="10" 
-                    HorizontalAlignment="Left" 
-                    VerticalAlignment="Center" />
+                        <TextBlock 
+                            x:Name="location"
+                            Grid.Column="1"
+                            Grid.Row="2"
+                            FontSize="13"
+                            FontWeight="Medium"
+                            Margin="10" 
+                            HorizontalAlignment="Left" 
+                            VerticalAlignment="Center" />
+                    </StackPanel>
+                </StackPanel>
             </Grid>
         </ui:CardExpander>
 
